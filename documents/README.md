@@ -45,8 +45,8 @@ A bilingual medical education and communication bot for LINE, powered by Google 
                     ┌──────┼──────┐
                     │      │      │
               ┌─────▼──┐ ┌─▼──┐ ┌▼──────────┐
-              │ Postgre│ │Drive│ │   Email    │
-              │   SQL   │ │API  │ │  Service   │
+              │ Postgre│ │ R2 │ │   Email    │
+              │   SQL  │ │    │ │  Service   │
               └────────┘ └────┘ └───────────┘
 ```
 
@@ -58,7 +58,7 @@ A bilingual medical education and communication bot for LINE, powered by Google 
 - LINE Messaging API account
 - Google Cloud account with Gemini API access
 - Gmail account with app password
-- Google Drive API credentials (optional)
+- Cloudflare R2 storage account
 
 ## 🚀 Quick Start
 

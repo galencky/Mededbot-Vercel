@@ -40,14 +40,22 @@ In the Render dashboard, add these environment variables:
 | `GMAIL_APP_PASSWORD` | Gmail app-specific password | `abcd efgh ijkl mnop` |
 | `BASE_URL` | Your Render URL (after creation) | `https://mededbot.onrender.com` |
 
+#### R2 Storage Variables (Required)
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `R2_ENDPOINT_URL` | Cloudflare R2 endpoint | `https://xxx.r2.cloudflarestorage.com` |
+| `R2_ACCESS_KEY_ID` | R2 access key | `abc123...` |
+| `R2_SECRET_ACCESS_KEY` | R2 secret key | `def456...` |
+| `R2_BUCKET_NAME` | R2 bucket name | `mededbot` |
+
 #### Optional Variables
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `GOOGLE_DRIVE_FOLDER_ID` | Google Drive folder for backups | `1abc...` |
-| `GOOGLE_CREDS_B64` | Base64 encoded service account | `eyJ0eXBlIj...` |
 | `LOG_LEVEL` | Logging level | `info` |
 | `RENDER` | Set to enable Render optimizations | `true` |
+| `PYTHON_VERSION` | Python version to use | `3.11.4` |
 
 ### 4. Configure LINE Webhook
 
@@ -112,7 +120,7 @@ Check logs to ensure tables are created.
 ### Audio Files Not Playing
 - Ensure `BASE_URL` is set correctly
 - Check if using memory storage (ephemeral filesystem)
-- Verify Google Drive is configured (if using)
+- Verify R2 storage is configured
 
 ### Database Connection Failed
 - Verify `DATABASE_URL` format

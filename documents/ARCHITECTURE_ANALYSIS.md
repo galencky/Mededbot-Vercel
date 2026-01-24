@@ -72,7 +72,7 @@ LINE webhook → Signature validation → Event type detection → Handler dispa
 - Handle text messages: extract user input, process through logic handler
 - Handle audio messages: save, transcribe, process as text
 - Create message bubbles for LINE responses (text, audio, flex messages)
-- Manage LINE's message limits (5 bubbles, 300k characters total)
+- Manage LINE's message limits (5 bubbles, 5000 characters total)
 - Handle Taigi credit attribution for Taiwanese TTS
 - Implement message splitting and truncation
 - Audio rejection based on session state
@@ -454,8 +454,8 @@ mededbot/
 
 **Limits**:
 - Max 5 bubbles per message
-- Max 300k characters total
-- Max 5k characters per bubble
+- Max 5000 characters total
+- Max 2000 characters per bubble
 
 #### [utils/quick_reply_templates.py](utils/quick_reply_templates.py)
 **Purpose**: Quick reply button templates (not shown but used)
@@ -604,7 +604,7 @@ User: email@example.com → logic_handler → mail_handler
 ### 3. LINE Messaging API
 - **Webhook**: Receives user messages
 - **Send API**: Sends responses (text, audio, flex messages)
-- **Limits**: 5 bubbles, 300k chars total
+- **Limits**: 5 bubbles, 5000 chars total
 
 ### 4. Cloudflare R2
 - **Purpose**: File storage (logs, audio)

@@ -44,9 +44,11 @@ GEMINI_API_KEY=your_key
 GMAIL_ADDRESS=your_email@gmail.com
 GMAIL_APP_PASSWORD=your_app_password
 
-# Google Drive (optional)
-GOOGLE_DRIVE_FOLDER_ID=your_folder_id
-GOOGLE_CREDS_B64=your_base64_encoded_credentials
+# Cloudflare R2 Storage
+R2_ENDPOINT_URL=https://your-account-id.r2.cloudflarestorage.com
+R2_ACCESS_KEY_ID=your_r2_access_key
+R2_SECRET_ACCESS_KEY=your_r2_secret_key
+R2_BUCKET_NAME=mededbot
 
 # App Config
 BASE_URL=https://your-domain.com
@@ -138,4 +140,3 @@ curl http://localhost:8080/health | jq
 ### Pydantic Session Migration (Future)
 - Models ready in `models/session.py`
 - Gradual migration path available
-- See PYDANTIC_MIGRATION_PLAN.md for details
