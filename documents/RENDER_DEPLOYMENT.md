@@ -32,7 +32,7 @@ In the Render dashboard, add these environment variables:
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `GEMINI_API_KEY` | Google Gemini API key | `AIza...` |
+| `GOOGLE_API_KEY` | Google Gemini API key | `AIza...` |
 | `LINE_CHANNEL_ACCESS_TOKEN` | LINE bot access token | `abc123...` |
 | `LINE_CHANNEL_SECRET` | LINE webhook secret | `def456...` |
 | `DATABASE_URL` | PostgreSQL connection string | `postgresql://user:pass@host/db?sslmode=require` |
@@ -54,8 +54,8 @@ In the Render dashboard, add these environment variables:
 | Variable | Description | Example |
 |----------|-------------|---------|
 | `LOG_LEVEL` | Logging level | `info` |
-| `RENDER` | Set to enable Render optimizations | `true` |
-| `PYTHON_VERSION` | Python version to use | `3.11.4` |
+| `STORAGE_BACKEND` | Storage mode (auto-detected on Render) | `MEMORY` |
+| `PYTHON_VERSION` | Python version to use | `3.11.9` |
 
 ### 4. Configure LINE Webhook
 

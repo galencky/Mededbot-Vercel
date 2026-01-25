@@ -10,8 +10,6 @@ docker-compose up -d
 ### Option 2: Synology NAS Deployment
 ```bash
 docker-compose -f docker-compose.synology.yml up -d
-# Or use the deployment script:
-./deploy-synology.sh
 ```
 
 ## Deployment Configurations
@@ -37,8 +35,8 @@ Create a `.env` file with:
 LINE_CHANNEL_ACCESS_TOKEN=your_token
 LINE_CHANNEL_SECRET=your_secret
 
-# Gemini API
-GEMINI_API_KEY=your_key
+# Google Gemini API
+GOOGLE_API_KEY=your_key
 
 # Email (optional)
 GMAIL_ADDRESS=your_email@gmail.com

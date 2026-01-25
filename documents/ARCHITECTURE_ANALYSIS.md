@@ -345,11 +345,16 @@ mededbot/
 - Content-type tracking
 
 #### [utils/storage_config.py](utils/storage_config.py)
-**Purpose**: Storage backend configuration (not shown but imported)
+**Purpose**: Storage backend configuration and auto-detection
 
 **Settings**:
-- `TTS_USE_MEMORY`: Use memory storage vs disk
-- `TTS_USE_R2`: Enable R2 uploads
+- `STORAGE_BACKEND`: Explicit backend selection (LOCAL, R2, or MEMORY)
+- Auto-detects cloud platforms (Render, Heroku, Railway) and defaults to MEMORY
+- Falls back to R2 if configured, otherwise LOCAL
+
+**Exports**:
+- `TTS_USE_MEMORY`: Boolean for memory storage mode
+- `TTS_USE_R2`: Boolean for R2 upload mode
 
 ---
 
@@ -833,8 +838,8 @@ BASE_URL=https://your-domain.com
 LINE_CHANNEL_ACCESS_TOKEN=xxx
 LINE_CHANNEL_SECRET=xxx
 
-# Gemini AI
-GEMINI_API_KEY=xxx
+# Google Gemini AI
+GOOGLE_API_KEY=xxx
 
 # Database
 DATABASE_URL=postgresql://user:pass@host/db
@@ -849,9 +854,8 @@ R2_ACCESS_KEY_ID=xxx
 R2_SECRET_ACCESS_KEY=xxx
 R2_BUCKET_NAME=mededbot
 
-# Storage Config
-TTS_USE_MEMORY=true/false
-TTS_USE_R2=true/false
+# Storage Config (auto-detected, or set explicitly)
+STORAGE_BACKEND=MEMORY  # Options: LOCAL, R2, MEMORY
 ```
 
 ---
