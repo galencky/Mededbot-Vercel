@@ -45,7 +45,26 @@
       "Bash(docs/SYNOLOGY_LOGS_FIX.md )",
       "Bash(docs/TECHNICAL_DETAILS.md )",
       "Bash(docs/stability_analysis.md )",
-      "Bash(archive/docs/)"
+      "Bash(archive/docs/)",
+      "Bash(npm --version)",
+      "Bash(pnpm --version)",
+      "Bash(npm install *)",
+      "Bash(npm ls *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:googleapis.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npx tsx *)",
+      "Bash(curl -sL https://raw.githubusercontent.com/googleapis/js-genai/main/README.md)",
+      "Bash(curl -sL https://ai.google.dev/gemini-api/docs/migrate-to-cloud)",
+      "Bash(curl -sL \"https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-preview-tts\")",
+      "Bash(curl -sL \"https://cloud.google.com/vertex-ai/generative-ai/docs/speech/text-to-speech\")",
+      "Bash(curl -sL \"https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview\")",
+      "Bash(curl -sL \"https://cloud.google.com/vertex-ai/generative-ai/docs/models\")",
+      "Bash(curl *)",
+      "Read(//private/tmp/**)",
+      "Bash(git check-ignore *)"
     ],
     "deny": []
   }
